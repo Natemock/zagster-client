@@ -7,7 +7,9 @@ function updateView(){
    $.getJSON(BASE_URL + "/rides/count/per_month", printData)
 }
 
-function printData
+function printData(data) {
+    "2017":[{"1":20},{"2":31},{"3":79},{"4":88},{"5":156},{"6":301},{"7":405},{"8":187},{"9":401},{"10":353},{"11":113},{"12":79}]
+}
 
 function updateRideCount(data) {
     numberOfRides = data.count
@@ -20,9 +22,9 @@ var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"],
         datasets: [{
-            label: '# of Votes',
+            label: '# of Rides',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
