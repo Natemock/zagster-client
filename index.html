@@ -9,7 +9,7 @@ crossorigin="anonymous">
     </script>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
-    <script>src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"> </script>
 </head>
 <body>
     
@@ -19,16 +19,15 @@ crossorigin="anonymous">
     alert("My program is alive!")
     </script>
     <p>Total Rides</p>
-
     <canvas id="myChart" width="400" height="400"></canvas>
 <script>
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"],
+        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
         datasets: [{
-            label: '# of Rides',
+            label: '# of Votes',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -60,5 +59,4 @@ var myChart = new Chart(ctx, {
     }
 });
 </script>
-</body>
-</html>
+    
