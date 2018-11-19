@@ -9,6 +9,7 @@ crossorigin="anonymous">
     </script>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <script>src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js</script>
 </head>
 <body>
     
@@ -22,7 +23,7 @@ crossorigin="anonymous">
     <canvas id="myChart" width="400" height="400"></canvas>
 <script>
 var ctx = document.getElementById("myChart").getContext('2d');
-var myChart = new Chart(ctx , {
+var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"],
