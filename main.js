@@ -16,7 +16,8 @@ function updateRideCount(data) {
     $("h2#rideCount").html(numberOfRides)
 }
 
-<canvas id="myChart" width="400" height="400"></canvas>
+<canvas id="myChart" width="400" height="400" style="border:1px solid #000000;">
+</canvas>
 <script>
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
