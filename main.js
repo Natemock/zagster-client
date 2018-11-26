@@ -9,7 +9,7 @@ function updateView(){
 
 function printData(data) {
     [{"Jan":20},{"Feb":31},{"Mar":79},{"Apr":88},{"May":156},{"Jun":301},{"July":405},{"Aug":187},{"Sept":401},{"Oct":353},{"Nov":113},{"Dec":79}]
-}
+} in console.log
 
 function updateRideCount(data) {
     numberOfRides = data.count
